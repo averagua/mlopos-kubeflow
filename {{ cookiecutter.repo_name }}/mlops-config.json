@@ -1,0 +1,18 @@
+{
+    
+    "project_name": "{{ cookiecutter.project_name }} ",
+    "repo_name": "{{ cookiecutter.repo_name }}",
+    "author_name": " {{ cookiecutter.author_name }}",
+    "description": " {{ cookiecutter.description }}",
+    "open_source_license": "{{ cookiecutter.open_source_license }}",
+    "python_interpreter": "{{ cookiecutter.python_interpreter }}",
+    "root": "",
+    "pipelines": {
+        "dir": "{{cookiecutter.repo_name}}/pipelines",
+        "registered": []
+    },
+    "components": {
+        "dir": "{{cookiecutter.repo_name}}/components",
+        "registered": []
+    }
+}

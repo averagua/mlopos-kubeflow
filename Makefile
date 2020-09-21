@@ -20,6 +20,10 @@ endif
 # COMMANDS                                                                      #
 #################################################################################
 
+## Generate a specific extension
+
+extends:
+	$(PYTHON_INTERPRETER) src/lib/extending.py
 ## Install Python Dependencies
 requirements: test_environment
 	$(PYTHON_INTERPRETER) -m pip install -U pip setuptools wheel
