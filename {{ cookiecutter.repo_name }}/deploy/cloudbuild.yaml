@@ -1,0 +1,21 @@
+if {%cookiecutter.automation_server == 'GCB'}
+steps:
+
+# Clone repo to Cloud Build environment
+- name: 'gcr.io/cloud-builders/git'
+  args: ['clone',
+         '${_REPO_URL}',
+         '--depth', '1',
+         '--verbose']
+  id: 'Clone Repo'
+
+{% if cookiecutter.use_pytest }
+# Run unit tests
+- name: 'python:3.6-slim-jessie'
+  entrypoint: 'bash'
+  args: ['components/tests.sh']
+  dir: 'kfp-example'
+  id: 'Run Unit Tests'
+
+{% endif }
+{% endif }

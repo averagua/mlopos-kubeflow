@@ -5,5 +5,10 @@
     "description": "A short description of the project.",
     "open_source_license": ["MIT", "BSD-3-Clause", "No license file"],
     "python_interpreter": ["python3"],
-    "add_pipeline": "[OPTIONAL] pipeline_name"
+    "add_pipeline": "[OPTIONAL] pipeline_name",
+    "use_pytest": "n",
+    "version": "0.1.0",
+    "use_kfp": "y",
+    "automation_server": ["GCB"],
+    "bucket": ["GCS"]
 }

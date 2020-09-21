@@ -1,18 +1,21 @@
 {
-    
+    "root": "./",
     "project_name": "{{ cookiecutter.project_name }} ",
     "repo_name": "{{ cookiecutter.repo_name }}",
-    "author_name": " {{ cookiecutter.author_name }}",
-    "description": " {{ cookiecutter.description }}",
+    "author_name": "{{ cookiecutter.author_name }}",
+    "description": "{{ cookiecutter.description }}",
     "open_source_license": "{{ cookiecutter.open_source_license }}",
     "python_interpreter": "{{ cookiecutter.python_interpreter }}",
-    "root": "",
+    "use_pytest": "{{ cookiecutter.user_pytest }}",
+    "use_kfp": "{{ cookiecutter.use_kfp }}",
+    "automation_server": "{{ cookiecutter.automation_server }}",
+    "bucket": "{{ cookiecutter.bucket }}",
     "pipelines": {
-        "dir": "{{cookiecutter.repo_name}}/pipelines",
+        "path": "pipelines",
         "registered": []
     },
     "components": {
-        "dir": "{{cookiecutter.repo_name}}/components",
+        "path": "components",
         "registered": []
     }
 }
